@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Savanna camp
+  m_EditorClassIdentifier: 
+  minSize: 40
+  maxSize: 80
+  chanceForFence: 10
+  fences:
+  - priority: 0
+    model: {fileID: 11400000, guid: f734ca2094d4c53439d0b3ae0224b82a, type: 2}
+  bigObjectsIntensity: 20
+  bigObjects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 92f44c5174ad5ce4ea6e446a375073f6, type: 2}
+    maxCount: 2
+  - priority: 10
+    model: {fileID: 11400000, guid: 964eefbf8c9c8f248a204bef18d7ff1d, type: 2}
+    maxCount: 2
+  - priority: 10
+    model: {fileID: 11400000, guid: d847f8e9a6fe68742a67ed8d9ca794e0, type: 2}
+    maxCount: 2
+  objectsIntensity: 10
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: cf47c0f39a3fde44da46b05e9a56aa75, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 558a399d617f9744a98a1ebbaaf2255c, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: e98854ee9069812419db2a973403c057, type: 2}
+  - priority: 0
+    model: {fileID: 11400000, guid: 372369a7c40f72b47b0de1fcc6d09226, type: 2}

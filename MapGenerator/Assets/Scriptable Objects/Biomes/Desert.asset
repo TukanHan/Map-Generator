@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: Desert
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: 79283304da789d3469fafbac39653f22, type: 3}
+  treesIntensity: 0
+  trees: []
+  objectsIntensity: 1
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: b391c8a57445ca941a3d984aabc6f8dc, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 3acde727e7ca9324cbcce1b8f8f71796, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 60bba2aed14d67d43b1a634b4eb22e6e, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: a2e05db54c04e284a83f8b0024d2baf3, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 9b666ef6af2d65948aa59599ccd55ea1, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 0586972f04e8ef44da3b2fb80443032d, type: 2}
+  locationsIntensity: 0.1
+  locations:
+  - priority: 10
+    model: {fileID: 11400000, guid: ed7d3a2956c1a954eb34a138b8dfed26, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: d37ed293c46a15040b47bf04bb0d34f7, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5bb730c73c9218547b15e6a9d342180a, type: 2}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8daa0d87eecf37143a022436c3a0715d, type: 3}
+  m_Name: Conifer1
+  m_EditorClassIdentifier: 
+  propability: 10
+  prefab: {fileID: 2446635422636073272, guid: d117836f4e807d840910d13aba2b5b2a, type: 3}
+  minScale: 0.8
+  maxScale: 1.4

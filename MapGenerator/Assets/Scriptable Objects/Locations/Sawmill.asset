@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Sawmill
+  m_EditorClassIdentifier: 
+  minSize: 50
+  maxSize: 80
+  chanceForFence: 33.3
+  fences:
+  - priority: 20
+    model: {fileID: 11400000, guid: f734ca2094d4c53439d0b3ae0224b82a, type: 2}
+  bigObjectsIntensity: 13
+  bigObjects:
+  - priority: 20
+    model: {fileID: 11400000, guid: 5d6d63fa8cea4874a95cbc554a656d0b, type: 2}
+    maxCount: 2
+  - priority: 10
+    model: {fileID: 11400000, guid: 8630178e6f118324ba549552862bedd6, type: 2}
+    maxCount: 1
+  - priority: 15
+    model: {fileID: 11400000, guid: 7111f0241fe75ee4b9730fe247f3f475, type: 2}
+    maxCount: 3
+  - priority: 15
+    model: {fileID: 11400000, guid: c1ff8d60be4006a4084aeced9afcfcd6, type: 2}
+    maxCount: 3
+  objectsIntensity: 17.4
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 558a399d617f9744a98a1ebbaaf2255c, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: fe69e78f40ec8354788c0113bd1969fd, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: df9280241882de048b050ef2a560b8db, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 9c9da2daddf0957489b787a4e8ebf76a, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 41259fb6bdf228d4b98425e425e4a8b4, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 076ed669ee3f26e478eb0c5ade87f54a, type: 2}

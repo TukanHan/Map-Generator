@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a646a6bfd6f8043a4cefeab9e95271, type: 3}
+  m_Name: Cmentary Fence
+  m_EditorClassIdentifier: Assembly-CSharp::FenceModel
+  topLeft: {fileID: 7571455871105220980, guid: 6aa5b97ee45b51c4e836e39657e13631, type: 3}
+  topLeftInside: {fileID: 7963437768179965359, guid: 03cb0454e430df442891587f5004cb5e,
+    type: 3}
+  topMiddle: {fileID: 6803380104043630244, guid: 9b8063155135cb94a8913d71c9ce596f,
+    type: 3}
+  topRight: {fileID: 1589548425409797144, guid: 292ae36e5ef38684fbb045293567f491,
+    type: 3}
+  topRightInside: {fileID: 5777431109229440793, guid: 7a659838af0d6d2488769fac8517a00d,
+    type: 3}
+  middleLeft: {fileID: 7522761231243343276, guid: 4c187c1a0b825f143b26d8d692d78848,
+    type: 3}
+  middleRight: {fileID: 8555073581778708437, guid: b4d68733586033247bb9e6a7345e81e9,
+    type: 3}
+  bottomLeft: {fileID: 4945622119109102790, guid: f71e9302933f04e428ca1b1097f992d0,
+    type: 3}
+  bottomLeftInside: {fileID: 3285064466265967144, guid: df56a6a626e22c24aae453b8a67d8773,
+    type: 3}
+  bottomMiddle: {fileID: 6803380104043630244, guid: c4303739cb57d5848a8767e8be318ce0,
+    type: 3}
+  bottomRight: {fileID: 6246379313555314519, guid: 235906f80df92bb4d9285e25b69e67cd,
+    type: 3}
+  bottomRightInside: {fileID: 5108933572338593722, guid: 92eb4556efabce549bfc7cba56840134,
+    type: 3}

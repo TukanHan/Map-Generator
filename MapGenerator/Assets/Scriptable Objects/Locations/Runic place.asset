@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Runic place
+  m_EditorClassIdentifier: 
+  minSize: 60
+  maxSize: 100
+  chanceForFence: 0
+  fences: []
+  bigObjectsIntensity: 10
+  bigObjects:
+  - priority: 30
+    model: {fileID: 11400000, guid: 3b0f40f4495f3a04581b78f637254f1a, type: 2}
+    maxCount: 1
+  - priority: 10
+    model: {fileID: 11400000, guid: 8e3e5b6ec4c7e0542bd1fefab2764352, type: 2}
+    maxCount: 100
+  - priority: 10
+    model: {fileID: 11400000, guid: 27fecc538aab3dc499c98ce35b0d2936, type: 2}
+    maxCount: 100
+  - priority: 10
+    model: {fileID: 11400000, guid: 6f1e31a09486e4243914f9208fa26133, type: 2}
+    maxCount: 100
+  objectsIntensity: 0
+  objects: []

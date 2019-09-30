@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: Taiga
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: f7b421f9055ffb543aef4497382c9b6d, type: 3}
+  treesIntensity: 20
+  trees:
+  - priority: 10
+    model: {fileID: 11400000, guid: ade0c7f44eb03b049ae5ad89d6ee86d1, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 1542b672e581c144ab21179ea5f41485, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 44becd363b7239644a5c326881ae3250, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: f26b262d23819de4cb6a25582688d37b, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 80eb6e270ec619b4e907c2b31da44709, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: f6ecb31f9862afe449ca059c1b0ccec1, type: 2}
+  objectsIntensity: 4
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 6e253721cee4f674fab703ef09b1a122, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: c68bdf7235984aa42a59823408e9e428, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 97114c1d1b4ff8d469e4ed0ac9d4aa26, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 9c9da2daddf0957489b787a4e8ebf76a, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 41259fb6bdf228d4b98425e425e4a8b4, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  locationsIntensity: 0.03
+  locations:
+  - priority: 20
+    model: {fileID: 11400000, guid: a7460370ecd0a9a4f83e1550058b0941, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 10580f0c16dc677499d89a9e3adbb75f, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5bb730c73c9218547b15e6a9d342180a, type: 2}

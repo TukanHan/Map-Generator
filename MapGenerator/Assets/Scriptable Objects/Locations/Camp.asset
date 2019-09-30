@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Camp
+  m_EditorClassIdentifier: 
+  minSize: 50
+  maxSize: 100
+  chanceForFence: 69.6
+  fences:
+  - priority: 10
+    model: {fileID: 11400000, guid: f734ca2094d4c53439d0b3ae0224b82a, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: a1fda97179d8b364ca09cdd5fbce3418, type: 2}
+  bigObjectsIntensity: 4.8
+  bigObjects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 1eba8965ea3677e49b8ea7340eb6a83c, type: 2}
+    maxCount: 2
+  - priority: 10
+    model: {fileID: 11400000, guid: e68552bc51d1dac45bfc0dcacb60080c, type: 2}
+    maxCount: 2
+  - priority: 20
+    model: {fileID: 11400000, guid: 92f44c5174ad5ce4ea6e446a375073f6, type: 2}
+    maxCount: 1
+  - priority: 20
+    model: {fileID: 11400000, guid: 0409e525a83246f42bb4f88f3482efa1, type: 2}
+    maxCount: 2
+  - priority: 5
+    model: {fileID: 11400000, guid: ec56a36fe4f36c4468db59b19f912811, type: 2}
+    maxCount: 1
+  - priority: 20
+    model: {fileID: 11400000, guid: 964eefbf8c9c8f248a204bef18d7ff1d, type: 2}
+    maxCount: 1
+  - priority: 20
+    model: {fileID: 11400000, guid: d847f8e9a6fe68742a67ed8d9ca794e0, type: 2}
+    maxCount: 1
+  objectsIntensity: 15
+  objects:
+  - priority: 20
+    model: {fileID: 11400000, guid: 558a399d617f9744a98a1ebbaaf2255c, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: cf47c0f39a3fde44da46b05e9a56aa75, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 81ba0b1517368f549b7cc36bd2639aa0, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 48d29ca9f74459b4ca821bc89b987a96, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 9c9da2daddf0957489b787a4e8ebf76a, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 41259fb6bdf228d4b98425e425e4a8b4, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: df9280241882de048b050ef2a560b8db, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 3b423d7a15f4ff3478012ffb8706911e, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 1687eb31b75a793469db1a78225cf3a1, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: e98854ee9069812419db2a973403c057, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 372369a7c40f72b47b0de1fcc6d09226, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 076ed669ee3f26e478eb0c5ade87f54a, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: ffa7f52f5ea19864da65721b4372c240, type: 2}

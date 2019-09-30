@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: DeapWater
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: 17c6a3c96e2c6b840aeaa45412c12455, type: 3}
+  treesIntensity: 0
+  trees: []
+  objectsIntensity: 0.5
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 5bca127ac38f2ed4ba3c54080fca7f8d, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 19418916ae59b6d439c63c58f204f4d7, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 01c0d3c41f8db3343a22def54f4836e3, type: 2}
+  - priority: 8
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  locationsIntensity: 0
+  locations: []

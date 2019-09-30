@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: Savanna
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: 8ed2205635353ae44b14571cce408696, type: 3}
+  treesIntensity: 0.5
+  trees:
+  - priority: 10
+    model: {fileID: 11400000, guid: 3ef23468b4dd7b5499e78f120927a59e, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 82122f0f18afdf742b5970b6139aa6f3, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: f6dddba5479353d4c900c8d7da59e4b3, type: 2}
+  objectsIntensity: 4
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: b391c8a57445ca941a3d984aabc6f8dc, type: 2}
+  - priority: 30
+    model: {fileID: 11400000, guid: 3acde727e7ca9324cbcce1b8f8f71796, type: 2}
+  - priority: 30
+    model: {fileID: 11400000, guid: 60bba2aed14d67d43b1a634b4eb22e6e, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: cc36dbc07779ebb42b27b5933454c7a9, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: a2e05db54c04e284a83f8b0024d2baf3, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 15bb95c51b72d6041a72fd77d8ef2b3a, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 7ced2a7a64f176c41bf7c8e5ef998ccd, type: 2}
+  locationsIntensity: 0.075
+  locations:
+  - priority: 30
+    model: {fileID: 11400000, guid: ed7d3a2956c1a954eb34a138b8dfed26, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 05c0221d14c390646a1fabc7c286a371, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5bb730c73c9218547b15e6a9d342180a, type: 2}

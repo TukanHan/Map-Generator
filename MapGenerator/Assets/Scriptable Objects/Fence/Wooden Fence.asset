@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a646a6bfd6f8043a4cefeab9e95271, type: 3}
+  m_Name: Wooden Fence
+  m_EditorClassIdentifier: 
+  topLeft: {fileID: 3439393456787863100, guid: 27a679109d815a14ebbb9d567bd3fd21, type: 3}
+  topLeftInside: {fileID: 5056629023481049069, guid: eb43572b0317f914bb02948be397e167,
+    type: 3}
+  topMiddle: {fileID: 8828753110773763095, guid: a06feda51ac4bb243b3f00a748ab3d98,
+    type: 3}
+  topRight: {fileID: 1343290091781708310, guid: 7faa31e78f0705941abb3e225597b738,
+    type: 3}
+  topRightInside: {fileID: 632928366510000003, guid: a35ddaf001cc2dc4daa9401120310f98,
+    type: 3}
+  middleLeft: {fileID: 6267416020590928735, guid: f8853749e8599a8459f1cccc345de0fc,
+    type: 3}
+  middleRight: {fileID: 8979592287323250135, guid: d9a761263ea8a0b44b2df2e785c4ad8c,
+    type: 3}
+  bottomLeft: {fileID: 3665450172973144285, guid: 11c863a63ba2b974fad49bd0c960dfbd,
+    type: 3}
+  bottomLeftInside: {fileID: 1661534789065066961, guid: b9531c3979e4e2940809f48c8684493c,
+    type: 3}
+  bottomMiddle: {fileID: 2292137967334575347, guid: 868132f01df64874289d0651fa5ed138,
+    type: 3}
+  bottomRight: {fileID: 142351213654921633, guid: 7bb1b1c1798271b4f8c78cdad8605a44,
+    type: 3}
+  bottomRightInside: {fileID: 5544465557234858431, guid: b658ee72a7eb1a246a7c84de96f0f9c2,
+    type: 3}

@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Village
+  m_EditorClassIdentifier: 
+  minSize: 150
+  maxSize: 300
+  chanceForFence: 69.6
+  fences:
+  - priority: 10
+    model: {fileID: 11400000, guid: f734ca2094d4c53439d0b3ae0224b82a, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 6b032ecd5aa77e44c811e778fc56c06a, type: 2}
+  bigObjectsIntensity: 11.7
+  bigObjects:
+  - priority: 20
+    model: {fileID: 11400000, guid: 1eba8965ea3677e49b8ea7340eb6a83c, type: 2}
+    maxCount: 100
+  - priority: 20
+    model: {fileID: 11400000, guid: e68552bc51d1dac45bfc0dcacb60080c, type: 2}
+    maxCount: 100
+  - priority: 5
+    model: {fileID: 11400000, guid: 0409e525a83246f42bb4f88f3482efa1, type: 2}
+    maxCount: 100
+  - priority: 5
+    model: {fileID: 11400000, guid: ec56a36fe4f36c4468db59b19f912811, type: 2}
+    maxCount: 1
+  - priority: 5
+    model: {fileID: 11400000, guid: f62c34795101c6841a210c56db32097e, type: 2}
+    maxCount: 100
+  - priority: 5
+    model: {fileID: 11400000, guid: 93b63c8a45428c64e8258cd26cc7f3a2, type: 2}
+    maxCount: 100
+  - priority: 10
+    model: {fileID: 11400000, guid: 0672f85d48ce33449b73ccd90c1b410d, type: 2}
+    maxCount: 1
+  - priority: 15
+    model: {fileID: 11400000, guid: 87c0563c51a0f11468e0b7c57de1ad9e, type: 2}
+    maxCount: 1
+  - priority: 15
+    model: {fileID: 11400000, guid: 0062a3b16c3e3e143b7e25fcf4408597, type: 2}
+    maxCount: 100
+  - priority: 20
+    model: {fileID: 11400000, guid: 3b53c67f86c0fd8439f2a767468a08f6, type: 2}
+    maxCount: 100
+  - priority: 20
+    model: {fileID: 11400000, guid: 8630178e6f118324ba549552862bedd6, type: 2}
+    maxCount: 100
+  - priority: 20
+    model: {fileID: 11400000, guid: c91bec89e9c047944830ce62b526cabd, type: 2}
+    maxCount: 3
+  - priority: 20
+    model: {fileID: 11400000, guid: 1090ca483a175ac4b8835927a72aa175, type: 2}
+    maxCount: 3
+  objectsIntensity: 8.7
+  objects:
+  - priority: 20
+    model: {fileID: 11400000, guid: 558a399d617f9744a98a1ebbaaf2255c, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: cf47c0f39a3fde44da46b05e9a56aa75, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: df9280241882de048b050ef2a560b8db, type: 2}

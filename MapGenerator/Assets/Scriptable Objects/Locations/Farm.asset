@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Farm
+  m_EditorClassIdentifier: 
+  minSize: 50
+  maxSize: 90
+  chanceForFence: 50
+  fences:
+  - priority: 10
+    model: {fileID: 11400000, guid: a1fda97179d8b364ca09cdd5fbce3418, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 84d567585e30f144e8935a6adf1c84b5, type: 2}
+  bigObjectsIntensity: 10
+  bigObjects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 8630178e6f118324ba549552862bedd6, type: 2}
+    maxCount: 1
+  - priority: 10
+    model: {fileID: 11400000, guid: 3b53c67f86c0fd8439f2a767468a08f6, type: 2}
+    maxCount: 1
+  - priority: 40
+    model: {fileID: 11400000, guid: 6afa20a17d050b645a29a67a5eaa3262, type: 2}
+    maxCount: 1
+  objectsIntensity: 40.1
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: 6991e13d709ae7f4a9bd2370e6dff369, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 5c40e0488b38f394f9f5126899ece12c, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 9eb7ca9f7e44e9f458735af3b382b33c, type: 2}

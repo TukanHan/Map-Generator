@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a646a6bfd6f8043a4cefeab9e95271, type: 3}
+  m_Name: Palisade
+  m_EditorClassIdentifier: 
+  topLeft: {fileID: 3293491797388218098, guid: e7866dd9c9f2a134b8d0b49b6b73396b, type: 3}
+  topLeftInside: {fileID: 1114558392558484415, guid: 47a2ceeb6373d8c43858fd3b1814cd4c,
+    type: 3}
+  topMiddle: {fileID: 4848081932429918463, guid: 651cdaf940f114c4ab592d55fac1438a,
+    type: 3}
+  topRight: {fileID: 5482693551189375581, guid: ae96d54278c24534c8481caa082b7e1b,
+    type: 3}
+  topRightInside: {fileID: 2634590802644681492, guid: 5d281212de43bfc4e81bc650c7f24b91,
+    type: 3}
+  middleLeft: {fileID: 2545461829612350156, guid: 49e742a02449f84489f4c7574b831beb,
+    type: 3}
+  middleRight: {fileID: 8459595495610718859, guid: faa7c15c7e11303479b6c8f4ec814753,
+    type: 3}
+  bottomLeft: {fileID: 9186863337357207140, guid: bcb09c2fd44b62749bdcf1c8e9c4dfa0,
+    type: 3}
+  bottomLeftInside: {fileID: 765178077685416441, guid: d9ed40b84df25ef49aeb577bc76d2ce4,
+    type: 3}
+  bottomMiddle: {fileID: 4871750487712005237, guid: 9d473b9cb72cd3c48a6631cf894fa70b,
+    type: 3}
+  bottomRight: {fileID: 1337968707328745580, guid: f2603665203ede742932cbe13e1a4e30,
+    type: 3}
+  bottomRightInside: {fileID: 2972385626256161115, guid: 8c0933a1ff6200d429234678c53042bc,
+    type: 3}

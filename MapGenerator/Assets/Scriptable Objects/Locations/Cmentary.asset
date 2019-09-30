@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Cmentary
+  m_EditorClassIdentifier: 
+  minSize: 30
+  maxSize: 100
+  chanceForFence: 48.6
+  fences:
+  - priority: 10
+    model: {fileID: 11400000, guid: 115402f2f1c58ea49aa720a6a25630fc, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 84d567585e30f144e8935a6adf1c84b5, type: 2}
+  bigObjectsIntensity: 3
+  bigObjects:
+  - priority: 20
+    model: {fileID: 11400000, guid: 5482339657f0c3344830a8ef33d2a700, type: 2}
+    maxCount: 1
+  objectsIntensity: 15
+  objects:
+  - priority: 20
+    model: {fileID: 11400000, guid: e5d2a5e8c93022643ba133ff20b7e645, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: ecde6e1cbbbe8c74189f9decae1edc87, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: dd2befe0706b5bc49908bc950ae0ae1e, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 9b666ef6af2d65948aa59599ccd55ea1, type: 2}

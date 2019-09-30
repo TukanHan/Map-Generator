@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a9361619325944e8cd0bc94666d2cb, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  ground: {fileID: 21300000, guid: 42163ffaa565e7e4b89e37411b6a0b8e, type: 3}
+  treesIntensity: 10
+  trees:
+  - priority: 10
+    model: {fileID: 11400000, guid: cc9a8a97a1d00b64194b56c5b1bf5265, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 29462d8f8e1e89b44bf8709e9a4d755e, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 12e7e39aa8723ac4493545f6f79dabc7, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 51e0432e4aebd224f957baed3aaf2453, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 44becd363b7239644a5c326881ae3250, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: f26b262d23819de4cb6a25582688d37b, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 80eb6e270ec619b4e907c2b31da44709, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: f6ecb31f9862afe449ca059c1b0ccec1, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 52ed89aed916b424d9007edeef9f9f55, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: ade0c7f44eb03b049ae5ad89d6ee86d1, type: 2}
+  - priority: 3
+    model: {fileID: 11400000, guid: 1542b672e581c144ab21179ea5f41485, type: 2}
+  objectsIntensity: 3
+  objects:
+  - priority: 10
+    model: {fileID: 11400000, guid: f735abc1dc46da24693d67e27807a151, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: f364408954b76a94694a1ce1b2006eae, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 428b23ef731452243acf0658adf1f60a, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: f84efacd10d083144bc71f3607897757, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 6e253721cee4f674fab703ef09b1a122, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: c68bdf7235984aa42a59823408e9e428, type: 2}
+  - priority: 20
+    model: {fileID: 11400000, guid: 97114c1d1b4ff8d469e4ed0ac9d4aa26, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 9c9da2daddf0957489b787a4e8ebf76a, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 97114c1d1b4ff8d469e4ed0ac9d4aa26, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 779c0fc01311a8d4d872476e9f57e99d, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 15bb95c51b72d6041a72fd77d8ef2b3a, type: 2}
+  - priority: 5
+    model: {fileID: 11400000, guid: 7ced2a7a64f176c41bf7c8e5ef998ccd, type: 2}
+  - priority: 1
+    model: {fileID: 11400000, guid: 48d29ca9f74459b4ca821bc89b987a96, type: 2}
+  locationsIntensity: 0.08
+  locations:
+  - priority: 10
+    model: {fileID: 11400000, guid: 9f31d4a095483964b8cb30d002d19575, type: 2}
+  - priority: 15
+    model: {fileID: 11400000, guid: 9859e3e90fd5b9c4bbcff963f109d7bd, type: 2}
+  - priority: 15
+    model: {fileID: 11400000, guid: a7460370ecd0a9a4f83e1550058b0941, type: 2}
+  - priority: 10
+    model: {fileID: 11400000, guid: 10580f0c16dc677499d89a9e3adbb75f, type: 2}

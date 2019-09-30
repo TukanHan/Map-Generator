@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a646a6bfd6f8043a4cefeab9e95271, type: 3}
+  m_Name: Stone Wall
+  m_EditorClassIdentifier: 
+  topLeft: {fileID: 7864324070943857023, guid: 785c00bf705ed1947bea0b703d98cdf8, type: 3}
+  topLeftInside: {fileID: 1575610871032409874, guid: 58cbbfc6c5011654a9829b947435cd9e,
+    type: 3}
+  topMiddle: {fileID: 5529026743757662810, guid: b6e32bc0c000fed4cac389fe59048056,
+    type: 3}
+  topRight: {fileID: 2795067965259810919, guid: 9e5540e7e5f06864d81575edbb370c30,
+    type: 3}
+  topRightInside: {fileID: 5772550733484682064, guid: 7f5234fdd93fe9749b852fce5999192f,
+    type: 3}
+  middleLeft: {fileID: 6215850992570295141, guid: 93662fdd8bb1b644d9122b2f38618c47,
+    type: 3}
+  middleRight: {fileID: 3411049647169537866, guid: 5c44b80b9f08a104db2ac263dbea1491,
+    type: 3}
+  bottomLeft: {fileID: 2341558195167910183, guid: 0845a2d1eda5b564cb39d52fcba032dd,
+    type: 3}
+  bottomLeftInside: {fileID: 8705272728051275749, guid: ba1e3681b2aabd7428227b1ddb95326a,
+    type: 3}
+  bottomMiddle: {fileID: 1552760219990074377, guid: 5c7ccff144400374686944b5b290c463,
+    type: 3}
+  bottomRight: {fileID: 5593279376849743829, guid: c80c8432211d7714f8ad98ccb6955afb,
+    type: 3}
+  bottomRightInside: {fileID: 5002617558257643147, guid: 2adc28e18bb4b1d4b8e60a9b1a2eb8be,
+    type: 3}

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e6f7ace45c898348b707c6875ba1070, type: 3}
+  m_Name: Pyramid
+  m_EditorClassIdentifier: 
+  minSize: 60
+  maxSize: 90
+  chanceForFence: 0
+  fences: []
+  bigObjectsIntensity: 100
+  bigObjects:
+  - priority: 100
+    model: {fileID: 11400000, guid: 5a70d7f5a71d85c4b8dbad1d4918d2ea, type: 2}
+    maxCount: 1
+  - priority: 10
+    model: {fileID: 11400000, guid: eb59000a5945a9f4abc772c1632aed44, type: 2}
+    maxCount: 2
+  objectsIntensity: 0
+  objects: []
