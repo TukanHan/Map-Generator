@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Object")]
+    [CreateAssetMenu(menuName = "Map Generator/Object")]
     public class ObjectModel : PrefabModel, IDataModelValidation
     {
         public DataModels.ObjectModel ToModel()

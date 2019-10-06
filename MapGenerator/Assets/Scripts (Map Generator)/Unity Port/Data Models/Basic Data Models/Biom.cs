@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Biom Data")]
+    [CreateAssetMenu(menuName = "Map Generator/Biom Data")]
     public class Biom : ScriptableObject, IDataModelValidation
     {
         public Sprite ground;

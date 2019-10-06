@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Big Object")]
+    [CreateAssetMenu(menuName = "Map Generator/Big Object")]
     public class BigObjectModel : PrefabModel, IDataModelValidation
     {
         public int tileWidthCount = 1;

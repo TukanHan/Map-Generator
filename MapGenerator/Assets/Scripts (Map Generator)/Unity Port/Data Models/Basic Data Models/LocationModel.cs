@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Location")]
+    [CreateAssetMenu(menuName = "Map Generator/Location")]
     public class LocationModel : ScriptableObject, IDataModelValidation
     {
         public int minSize = 20;

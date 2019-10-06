@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Tree Data")]
+    [CreateAssetMenu(menuName = "Map Generator/Tree Data")]
     public class TreeModel : PrefabModel, IDataModelValidation
     {
         public float minScale = 0.8f;

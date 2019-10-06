@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace MapGenerator.UnityPort
 {
-    [CreateAssetMenu(menuName = "Random Map Generator/Fence")]
+    [CreateAssetMenu(menuName = "Map Generator/Fence")]
     public class FenceModel : ScriptableObject, IDataModelValidation
     {
         public GameObject topLeft;
