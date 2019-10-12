@@ -1,7 +1,5 @@
-# Temporary ponglish version
-
-
 # Map Generator
+
 > Unity tool for procedural generation of two-dimensional maps.
 
 ![License](https://img.shields.io/github/license/TukanHan/Map-Generator?style=flat-square)
@@ -19,81 +17,81 @@
 
 ## Description
 ### About tool
-Narzędzie umożliwia generowanie map zarówno w trybie projektowania jak i przy starcie sceny. Posiada edytor pozwalający na parametryzację generatora i dodawanie nowych modeli danych bez konieczności programowania. Parametryzacja generatora daje duży wpływ na efekt finalny wygenerowanej mapy. Umożliwia wygenerowanie mapy z podanego ziarna losowości, przez co dla tych samych parametrów możliwe jest odwzorowanie tej samej mapy. 
+The tool creates opportunity to generate maps in design mode and at the start of the scene.  It has an editor that enable you to parameterize the generator and add new data models without programming.  The parameterization of the generator has a big impact on the final effect of the generated map. It enable you to generate a map from the given seed of randomness, so it is possible to generate the same map for the same parameter.
 
 ### About map generation
-Działanie generatora opiera się na mapach szumu. W pierwszej kolejności generowane są mapy szumu wysokości i temperatury. Dla każdej komórki na mapie, na podstawie wartości z tych dwóch map wyliczany jest poszczególny biom z przygotowanego diagramu biomów. Dzięki temu przechodzenie między biomami na mapie wygląda naturalnie, a zarazem różnorodnie. Na tak wygenerowaną mapę składającą się z biomów, generowana jest warstwa wody, utworzona również za pomocą mapy szumu. Na sam koniec generowane są obiekty na mapie, takie jak: lokacje, roślinność i inne obiekty, przy czym każdy biom posiada własne obiekty, które będą na nim generowane.
+The generator's operation is based on <a href="https://www.redblobgames.com/maps/terrain-from-noise" target="_blank">noise maps</a>. First, height and temperature noise maps are generated. For each cell on the map, based on the values from these two maps, a particular biom is calculated from the prepared biomes diagram. Thanks to this, the transition between biomes on the map looks natural and diverse at once. For a generated map consisting of biomes, a water layer is generated, also created using a noise map.  Finally, objects on the map such as locations, vegetation and other objects, with each biom having its own objects that will be generated on it.
 
 ## Map examples
-Poniżej znajduje się kilka przykładów wygenerowanych map dla odmiennych parametrów generatora. Narzędzie umożliwia dodawanie nowych obiektów, definiowanie własnych modeli biomów i lokacji, podmianę istniejącej grafiki lub wprowadzenie własnego stylu graficznego. Zachęcam do eksperymentów i tworzenia własnych światów.
+Below you can find some examples of generated maps for different generator parameters. The tool enable you to add new objects, define your own biomes and locations, change graphics or enter your own graphic style. I encourage you to experiment and create your own worlds.
 
-> Kliknij na konkretny obrazek, aby zobaczyć go w powiększeniu.
+> Click on a specific image to enlarge.
 
 <img src="https://drive.google.com/uc?id=1jHI-vV0bvMqIG-8VD23mnXE_IqIH4ziO" alt="alt text" width="49%" height="49%"> <img src="https://drive.google.com/uc?id=1vbHfKjriRNOAG9IQs1gB80p_DFB2SYQ_" alt="alt text" width="49%" height="49%">
 <img src="https://drive.google.com/uc?id=1mVKpooJsbKvZbkBvN2ZzJhDv3Hi6hPNz" alt="alt text" width="49%" height="49%"> <img src="https://drive.google.com/uc?id=1_LYgqZBkFCJcdRAxLZNt1fNThZy2F2nn" alt="alt text" width="49%" height="49%">
 <img src="https://drive.google.com/uc?id=1yNUibrpAFfxmL5uqKPX_YZ9nWCVuzzXW" alt="alt text" width="49%" height="49%">  <img src="https://drive.google.com/uc?id=1LU7cpGLaM8-WbzsKudsyPtzm-KztNQWB" alt="alt text" width="49%" height="49%">
 
 ## Usage
-
-Narzędzie zostało zaprojektowane aby było proste w obsłudze i każdy był w stanie je użytkować bez potrzeby edycji kodu źródłowego. Na narzędzie składają się: edytor generatora, który pozwala parametryzować generowane mapy oraz modele danych, które reprezentują konkretne obiekty jak: biomy, lokalizacje czy pojedyńcze obiekty.
+The tool has been designed in an easy way to use. Anyone can use it without necessity to edit the source code. The tool consists of: a generator editor that allows you to parameterize the generated maps and data models that represent specific objects such as biomes, locations or individual objects.
 
 ### Editor
 
 <img src="https://drive.google.com/uc?id=1WzwunozTFa08FIU43Sk7iEg8ay7Dfc4v" alt="Editor" width="70%" height="70%">
 
 #### Size section
-Narzędzie umożliwia generowanie map w przestrzeni dwuwymiarowej. W tej sekcji można ustalić wymiary wygenerowanej mapy.
+The tool enable you to generate maps in two-dimensional space. In this section you can set the sizes of the generated map.
 
 #### Height & Temperature noise map section
-W tych sekcjach można modyfikować parametry map szumów temperatur i wysokości. Od wygenenerowanych wartości z tych dwóch map szumów zależeć będzie jakie biomy zostaną przypisane do konkretnych komórek na mapie.
->**Oktawy** wpływa na to jak bardzo rozmyte będą sąsiadujące strefy biomów. Czym większa wartość, tym bardziej będą one poszarpane.
+In these sections you can modify the parameters of temperature and height noise maps. The generated values from these two noise maps will determine which biomes will be assigned to specific cells on the map.
 
->**Ziarnistość** wpływa na to jak zróżnicowane będą wygenerowane biomy. Im niższa wartość, tym bardziej będą one zróżnicowane. 
+>**Octaves** affects on how blurry the adjacent biomes zones will be. The greater the value, the more they will be scraggy.
 
->**Zakres wartości** umożliwiają ograniczenie wygenerowanych wartości map szumów do podanego zakresu. Umożliwia to wygenerowanie na mapie tylko określonych biomów z całego spektrum.
+>**Frequency** affects on how diverse the biomes generated will be. The lower the value, the more diverse they will be.
 
->**Target Value** umożliwia przesunięcie generowanych wartości w którąś ze stron spektrum, w taki sposób, aby pewne wartości pojawiały się częściej.
+>**Value Range**  makes you possible to change the generated noise map values to the given range and to generate only specific biomes from the entire spectrum on the map.
+
+>**Target Value** enable you to shift the generated values to one side of the spectrum in such a way that certain values appear more often.
 
 #### Water noise map section
-W tej sekcji można modyfikować parametry mapy szumu wody. Posiada parametry jak sekcje wyżej. Od wygenerowanych tu wartości zależy jak będzie wyglądać warstwa wody na mapie.
+In this section you can modify the parameters of the water noise map. It has the parameters mentioned above. The appearance of the water layer will depend on the values generated here.
 
->**Water area percent** wpłyna na minimalną i maksymalną procentową wartość wody na mapie.
+>**Water area percent** affects on the minimum and maximum percentage of water on the map.
 
 #### Water biomes section
-W tej sekcji można definiować kolejne warstwy głębokości wody na mapie. Umożliwia to uworzenie osobnych warstw dla wody płytkiej, głębokiej lub nawet zasymulowanie wysp na wodzie.
+In this section you can define further layers of water depth on the map. The generator makes it possible to create separate layers for shallow and deep water or even to simulate islands.
 
->**Water Thresholding** definiuje próg dla wartości z mapy szumu wody po przekroczeniu którego, zostanie wybrana ta warstwa. Każda kolejna warstwa wody musi mieć większą wartość progu.
+>**Water Thresholding** defines the threshold for the values from the water noise map after which this layer will be selected. Each subsequent layer of water must have a higher threshold value.
 
->**Biom** przypisany tu model biomu będzie reprezentował daną warstwę wody.
+>**Biom** assigned here will represent a given water layer.
 
 #### Biomes diagram section
-W tej sekcji można defioniwać diagram biomów. Ustalać jego rozmiar oraz przypisywać modele biomów do odpowiednich komórek w diagramie. Od przypisanych tu wartości zależy jakie biomy na mapie będą ze sobą sąsiadować. Biomy na mapie wybierane są z diagramu biomu na podstawie wartości z map szumów wysokości i temperatury.
+In this section you can define a biomes diagram, set its size and assign biomiom models to the appropriate cells in the diagram. The values assigned here have an influence on which biomes on the map will be adjacent. Biomes on the map are selected from the biome diagram based on the values from height and temperature noise maps.
 
 #### Generation section
-W tej sekcji można ustalić szczegóły dotyczące generacji mapy oraz wygenerować ją zapośrednictwem przycisku.
+In this section you can set the details of the map generation and generate it via the button.
 
->**Generation type** pozwala wybrać czy obiekty mają być generowane na Tile Mapie, czy może w postaci spritów.
+>**Generation type** enable you to choose whether the objects are to be generated on the tile map or maybe as sprites.
 
->**Generate on start** pozwala wybrać czy mapa powinna być generowana przy starcie sceny.
+>**Generate on start** allows you to choose if the map should be generated at the start of the scene.
 
->**Generate random seed** pozwala wybrać czy mapa ma zostać wygenerowana na podstawie losowego zarna, czy ma on zostać wprowadzone.
+>**Generate random seed** allows you to choose if the map should be generated on the basis of a random seed or if it should be entered.
 
->**Seed** pozwala wprowadzić konkretne ziarno losowości, dzięki któremu dla tych samych parametórw można odwzorować identyczną mapę.
+>**Seed** allows you to enter a specific seed of randomness, thanks to which an identical map can be generated for the same parameters.
 
 ### Data models
-Modele danych służą do przechodwywania informacji na których operuje generator map. Są one zapisywane w Unity za pomocą mechanizmu Scriptable Object, dzięki temu jeden przygotowany model danych może być przypisany do wielu miejsc. Narzędzie posiada kilka typów modeli danych, które można przedstawić na schemacie hierarchicznym.
+Data models are used to keep information on which the map generator operates. They are saved in Unity using the <a href="https://docs.unity3d.com/Manual/class-ScriptableObject.html" target="_blank">Scriptable Object</a> mechanism, thanks to which one prepared data model can be used many times. The tool has several types of data models that can be presented in a hierarchical scheme.
 
 <p align="center"><img src="https://drive.google.com/uc?id=13OJpWmn0sEq7mBngUwIS9LRb_ZPX3Bu-" alt="Data Models" width="75%" height="75%"></p>
 
-Aby utworzyć nowy model danych w projekcie Unity należy wcisnąć PPM w widoku projektu, z menu kontekstowego wybrać Create -> Map Generator, a następnie konkretny typ modelu danych. W zamieszczonym projekcie można zobaczyć przykłady zastosowań takich modeli danych.
+To create a new data model in the Unity project, press PPM in the project view, select Create -> Map Generator from the context menu, then the specific data model type. In the uploaded project you can see examples of the use of such data models.
 
->**Intensity** określa szansę wygenerowania obiektu dla każdej pojedyńczej komórki na mapie, o ile pozwalają na to warunki. Nie określa ono pokrywania samej mapy danym typem obiektów.
+>**Intensity** determines the chance of generating an object for each individual cell on the map, if conditions allow for it. It does not specify covering the map itself with a given type of objects.
 
->**Prioryty** określa szansę na wylosowanie tego elementu z całej kolekcji obiektów. Im większy priorytet tym większa szansa. Do wylosowania obiektu z kolekcji używany jest mechanizm selekcji koła ruletki.
+>**Prioryty** defines the chance for this object to be generated from the entire collection of objects. The greater the priority, the greater the chance. The roulette wheel selection mechanism is used to draw an object from the collection.
 
->**Max Count** określa maksymalną możliwą liczbę wystąpień danego obiektu w ramach obiektu rodzica.
+>**Max Count** specifies the maximum possible number of occurrences of a given object under the parent’s object.
 
 ## License 
-Autorem tego narzędzia jest **TukanHan** i jest ono udostępnione na licencji <a href="http://badges.mit-license.org" target="_blank">**MIT**</a>. Masz przyzwolenie na robienie z nim czego chesz bez pytania mnie o zgodę, jednak jeśli doceniasz mój wkład proszę o uznanie autorstwa. 
+The author of this tool is **TukanHan** and it is released under the <a href="http://badges.mit-license.org" target="_blank">**MIT**</a> license. You have permission to do what you want with it without asking me for permission, but if you appreciate my contribution, please acknowledge the authorship.
 
-Jeśli podoba Ci się ten projekt wesprzyj moją pracę udostępniając projekt innym urzytkownikom, aby oni też mogli z niego skorzystać.
+If you like this project, support my work by sharing the project with other users so that they can also use it.
