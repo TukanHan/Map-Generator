@@ -18,6 +18,7 @@ namespace MapGenerator.UnityPort
         public WaterLayers waterLayers;
 
         public GraphicalGenerationType generationType = GraphicalGenerationType.TileMap;
+        public SpaceOrientationType orientationType = SpaceOrientationType.Orientation3D;
         public bool generateOnStart = true;
         public bool generateRandomSeed = true;
         public int seed;
@@ -74,10 +75,12 @@ namespace MapGenerator.UnityPort
             generator.Generate();
             Map = generator.Map;
 
-            IGraphicalMapGenerator graphicalMapGenerator = new GraphicalMapGeneratorFactory().GetGraphicalMapGenerator(generationType);
+            ISpaceOrientation spaceOrientation = new SpaceOrientationFactory().GetSpaceOrientation(orientationType);
+
+            IGraphicalMapGenerator graphicalMapGenerator = new GraphicalMapGeneratorFactory().GetGraphicalMapGenerator(generationType, spaceOrientation);
             graphicalMapGenerator.Render(transform, generator.Map);
 
-            ObjectsGenerator objectsGenerator = new ObjectsGenerator();
+            ObjectsGenerator objectsGenerator = new ObjectsGenerator(spaceOrientation);
             objectsGenerator.Render(transform, generator.AwaitingObjects);
         }  
 

@@ -35,13 +35,16 @@ namespace MapGenerator.Generator
             temperatureLayerCountInversion = 1f / biomes.GetLength(1);
             heightLayerCountInversion = 1f / biomes.GetLength(0);
 
+            FindMinMax(heightNoiseArray, out float heightMin, out float heightMax);
+            FindMinMax(temperatureNoiseArray, out float temperatureMin, out float temperatureMax);
+
             for (int i = 0; i < map.Height; ++i)
             {
                 for (int j = 0; j < map.Width; ++j)
                 {
                     Tile tile = map[i, j];
-                    tile.Height = ScaleValue(heightNoiseArray[i, j], heightNoiseMapParameters);
-                    tile.Temperature = ScaleValue(temperatureNoiseArray[i, j], temperatureNoiseMapParameters);
+                    tile.Height = ScaleValue(heightNoiseArray[i, j], heightMin, heightMax, heightNoiseMapParameters);
+                    tile.Temperature = ScaleValue(temperatureNoiseArray[i, j], temperatureMin, temperatureMax, temperatureNoiseMapParameters);
                     tile.Biom = CalculateBiom(tile.Temperature, tile.Height);
                 }
             }
@@ -55,10 +58,28 @@ namespace MapGenerator.Generator
             return biomes[y,x];
         }
 
-        private float ScaleValue(float value, GroundNoiseMapParametersModel noiseMapParameters)
+        private void FindMinMax(float[,] noiseMap, out float min, out float max)
         {
-            float scale = noiseMapParameters.MaxValue - noiseMapParameters.MinValue;
-            return scale * value + noiseMapParameters.MinValue;
+            min = float.MaxValue; max = float.MinValue;
+
+            foreach(float value in noiseMap)
+            {
+                if (value > max)
+                    max = value;
+                if (value < min)
+                    min = value;
+            }
+        }
+
+        private float ScaleValue(float value, float minValue, float maxValue, GroundNoiseMapParametersModel noiseMapParameters)
+        {
+            float result = ((value - minValue) * (noiseMapParameters.MaxValue - noiseMapParameters.MinValue) / (maxValue - minValue) + noiseMapParameters.MinValue);
+            return Clamp(result, 0, 0.9999999f);
+        }
+
+        private float Clamp(float value, float min, float max)
+        {
+            return value > max ? max : (value < min ? min : value);
         }
     }
 }

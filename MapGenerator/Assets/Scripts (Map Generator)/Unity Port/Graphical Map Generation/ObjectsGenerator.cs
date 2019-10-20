@@ -7,6 +7,12 @@ namespace MapGenerator.UnityPort
     public class ObjectsGenerator
     {
         private Transform objectParent;
+        private readonly ISpaceOrientation spaceOrientation;
+
+        public ObjectsGenerator(ISpaceOrientation spaceOrientation)
+        {
+            this.spaceOrientation = spaceOrientation;
+        }
 
         public void Render(Transform parentTransform, List<AwaitingObject> awaitingObjects)
         {
@@ -27,14 +33,16 @@ namespace MapGenerator.UnityPort
         {
             foreach (AwaitingObject ao in awaitingObjects)
             {
-                CreateObject(ao.AbstractObject as GameObject, ao.Position, ao.Scale);
+                Vector3 position = spaceOrientation.GetPositionVector(ao.Position);
+                CreateObject(ao.AbstractObject as GameObject, position, ao.Scale);
             }
         }
 
-        private GameObject CreateObject(GameObject prefab, Vector2Float position, float scale)
+        private GameObject CreateObject(GameObject prefab, Vector3 position, float scale)
         {
-            GameObject gameObject = GameObject.Instantiate(prefab, new Vector3(position.X, 0, position.Y), Quaternion.identity, objectParent);
+            GameObject gameObject = GameObject.Instantiate(prefab, position, Quaternion.identity, objectParent);
             gameObject.transform.localScale = new Vector3(scale, scale, scale);
+            gameObject.transform.Rotate(spaceOrientation.GetObjectRotationVector());
 
             return gameObject;
         }

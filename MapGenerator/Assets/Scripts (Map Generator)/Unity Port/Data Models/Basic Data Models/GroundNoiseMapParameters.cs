@@ -18,7 +18,7 @@ namespace MapGenerator.UnityPort
             {
                 Octaves = octaves,
                 Frequency = frequency,
-                TargetValue = targetValue,
+                TargetValue = CalculateTargetValue(),
                 MinValue = minValue,
                 MaxValue = maxValue
             };

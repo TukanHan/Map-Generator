@@ -19,7 +19,7 @@ namespace MapGenerator.UnityPort
             {
                 Octaves = octaves,
                 Frequency = frequency,
-                TargetValue = targetValue,
+                TargetValue = CalculateTargetValue(),
                 MinWaterPercent = minWaterPercent,
                 MaxWaterPercent = maxWaterPercent
             };

@@ -120,6 +120,10 @@ namespace MapGenerator.UnityPort
                 new GUIContent("Generation type", "The way a graphic representation of the map will be generated."),
                 mapGenerator.generationType);
 
+            mapGenerator.orientationType = (SpaceOrientationType)EditorGUILayout.EnumPopup(
+                new GUIContent("Space orientation", "The space orientation in which the map is generated."),
+                mapGenerator.orientationType);
+
             mapGenerator.generateOnStart = EditorGUILayout.Toggle(
                 new GUIContent("Generate on start", "Is the map to be generated when the scene starts?"),
                 mapGenerator.generateOnStart);

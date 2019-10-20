@@ -26,16 +26,11 @@ namespace MapGenerator.Generator
             {
                 for (int j = 0; j < width; ++j)
                 {
-                    map[i, j] = Clamp(CalculateValue(noiseMapParameters, j, i), 0, 0.999f);
+                    map[i, j] = CalculateValue(noiseMapParameters, j, i);
                 }
             }
 
             return map;
-        }
-
-        private float Clamp(float value, float min, float max)
-        {
-            return value > max ? max : (value < min ? min : value);
         }
 
         private float CalculateValue(NoiseMapParametersModel parameters, float x, float y)
@@ -45,11 +40,11 @@ namespace MapGenerator.Generator
             for (int i = 0; i < parameters.Octaves; ++i)
             {
                 float value = ImprovedNoise.Noise2D((x + xOff) * gain / parameters.Frequency, (y + yOff) * gain / parameters.Frequency);
-                noise += value * parameters.TargetValue / gain;     
+                noise += value * 0.5f / gain;
                 gain *= 2;
             }
 
-            return noise;
+            return (float)Math.Pow(noise, parameters.TargetValue);
         }
     }
 }

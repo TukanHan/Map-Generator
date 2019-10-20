@@ -41,9 +41,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Water
-    uniqueID: 1892075409
+  - name: MG_Ground
+    uniqueID: 50404
     locked: 0
-  - name: Objects
-    uniqueID: 3454537189
+  - name: MG_Water
+    uniqueID: 79457
+    locked: 0
+  - name: MG_Objects
+    uniqueID: 19685
     locked: 0
