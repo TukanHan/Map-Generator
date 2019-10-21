@@ -72,6 +72,8 @@ In this section you can set the details of the map generation and generate it vi
 
 >**Generation type** enable you to choose whether the objects are to be generated on the tile map or maybe as sprites.
 
+>**Space orientation** enable you to choose whether the map will be generated in 2D or 3D space.
+
 >**Generate on start** allows you to choose if the map should be generated at the start of the scene.
 
 >**Generate random seed** allows you to choose if the map should be generated on the basis of a random seed or if it should be entered.
