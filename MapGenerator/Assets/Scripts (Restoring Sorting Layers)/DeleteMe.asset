@@ -13,4 +13,3 @@ MonoBehaviour:
   m_Name: DeleteMe
   m_EditorClassIdentifier: 
   prefabsPath: Assets/Prefabs
-  shouldDoMyDiuty: 0

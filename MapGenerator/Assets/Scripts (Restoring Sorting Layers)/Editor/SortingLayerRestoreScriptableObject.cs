@@ -6,19 +6,15 @@ using UnityEngine;
 
 namespace SortingLayerRestore
 {
-    [CreateAssetMenu(menuName = "SortingLayerRestoreScriptableObject")]
+    [CreateAssetMenu(menuName = "Restore Sorting Layer")]
     public class SortingLayerRestoreScriptableObject : ScriptableObject
     {
         public string prefabsPath = "Assets/Prefabs";
-        public bool shouldDoMyDiuty = true;
 
-        public void DoYourDiuty()
+        public void RestoreSortingLayers()
         {
-            if(shouldDoMyDiuty)
-            {
-                AddSortingLayers();
-                EditPrefabs();
-            }
+            AddSortingLayers();
+            EditPrefabs();
         }
 
         private void EditPrefabs()
@@ -65,7 +61,7 @@ namespace SortingLayerRestore
         {
             SerializedProperty sortingLayers = serializedObject.FindProperty("m_SortingLayers");
 
-            List<int> Ids = new List<int>(); 
+            List<int> Ids = new List<int>();
             for (int i = 0; i < sortingLayers.arraySize; i++)
             {
                 if (sortingLayers.GetArrayElementAtIndex(i).FindPropertyRelative("name").stringValue.Equals(layerName))
